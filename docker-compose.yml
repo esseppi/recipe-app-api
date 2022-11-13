@@ -28,5 +28,5 @@ services:
         - POSTGRES_USER=debug
         - POSTGRES_PASSWORD=debug
         - POSTGRES_DB=devdb
-  volumes:
-    dev-db-data:
+volumes:
+  dev-db-data:
