@@ -17,7 +17,8 @@ services:
 
 
     environment:
-      - DB_HOST=localhost
+      - DB_HOST=db
+      - DB_PORTS=5432
       - DB_NAME=uppi
       - DB_USER=debug
       - DB_PASS=debug
@@ -33,6 +34,6 @@ services:
       - POSTGRES_PASSWORD=debug
       - POSTGRES_DB=uppi
     ports:
-      - "5432:5432"
+      - 5432:5432
 volumes:
   dev-db-data:
